@@ -1,0 +1,28 @@
+@import '~antd/dist/antd.css';
+
+.google-button {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+
+}
+
+.greeting {
+    position: absolute;
+    top: 0px;
+    right: 180px;
+    color: white;
+}
+
+[data-theme="light"] .site-layout .site-layout-background {
+    background: white;
+}
+
+.logo-genotype {
+    height: 31px;
+    width: 160px;
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}

@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "genotype-stage",
-    "production": "genotype",
+    "production": "genotype-prod",
     "stage": "genotype-stage"
   }
 }
