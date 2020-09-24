@@ -318,7 +318,7 @@ export class EditableTable extends React.Component<Props, State> {
       document.getElementsByClassName('ant-table-filter-trigger')[2]
     ) {
       document.getElementsByClassName('ant-table-filter-trigger')[2][
-        'style'
+        'styles'
       ].display = 'none';
     }
   }
