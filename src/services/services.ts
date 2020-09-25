@@ -50,7 +50,7 @@ export const getAnalyses = async (
   return response;
 };
 
-export const getAnalysesByFamily = async (
+export const getPlates = async (
   family = '',
   token: string = getToken()
 ): Promise<GetAnalysesResponse> => {

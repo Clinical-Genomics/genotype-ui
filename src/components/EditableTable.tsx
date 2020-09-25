@@ -7,7 +7,7 @@ import {
   getPriorityTagColor,
 } from './styleHelpers';
 import { formatDate, sortComments, sortDate } from '../services/helpers';
-import { editAnalysis, getAnalysesByFamily } from '../services/services';
+import { editAnalysis, getPlates } from '../services/services';
 
 const EditableContext = React.createContext<any | undefined>(undefined);
 
@@ -292,7 +292,7 @@ export class EditableTable extends React.Component<Props, State> {
   };
 
   searchFamily = (value) => {
-    getAnalysesByFamily(value).then((response) =>
+    getPlates(value).then((response) =>
       response.analyses.map((analysis) => {
         return {
           family: analysis.family,

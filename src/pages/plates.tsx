@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getAnalysesByFamily } from '../services/services';
+import { getPlates } from '../services/services';
 import { Loading } from '../components/Loading';
 import { EditableTable } from '../components/EditableTable';
 import { Input } from 'antd';
@@ -10,7 +10,7 @@ const FamilyAnalysesComponent = () => {
 
   const searchFamily = (value) => {
     setIsLoaded(false);
-    getAnalysesByFamily(value)
+    getPlates(value)
       .then((response) => {
         setBaseSource(
           response.analyses.map((analysis) => {
