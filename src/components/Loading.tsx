@@ -1,10 +1,12 @@
 import React from 'react';
-import { Spin, Space } from 'antd';
+import PacmanLoader from '@bit/davidhu2000.react-spinners.pacman-loader';
+import { primaryColor } from '../styles/style-constants';
 
 export const Loading = () => {
   return (
-    <Space size="middle">
-      <Spin size="large" />
-    </Space>
+    <PacmanLoader
+      size={60}
+      color={primaryColor}
+    />
   );
 };
